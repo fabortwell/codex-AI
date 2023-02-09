@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
     const response = await fetch('https://codex-v13w.onrender.com/', {
         method: 'POST',
         headers: {
-            'content-type': 'application/json'
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify ({
             prompt: data.get('prompt')
@@ -95,7 +95,7 @@ const handleSubmit = async (e) => {
     })
 
     clearInterval(loadInterval);
-    messageDiv.innerHTML = '';
+    messageDiv.innerHTML = " ";
 
     if(response.ok) {
         const data = await response.json();
