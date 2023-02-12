@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
 
     // fetch data from server -> bot's response
 
-    const response = await fetch('https://codex-chat-xkcq.onrender.com/', {
+    const response = await fetch('https://brainy-slug-parka.cyclic.app/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
